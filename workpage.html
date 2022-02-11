@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   
+    <title>Portfolio</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+    <link href= "workstyles2.css" rel="stylesheet">
+    <script src="workpage.js" defer></script>
+
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+</head>
+
+<body>
+
+    <nav class= "header-container" id= "header-container">
+            <div class= "logo">  
+                <a href="workpage.html" target="_self">
+                    <img  src= "img/logo.png" atl= "top logo">
+                </a>
+            </div> 
+                
+
+                <div class= "navBar" id= "navBar" >
+                <ul class="navItems">
+                    <!-- <li class= "item"><a  href= "workpage.html" target="_self">.work</a></li>   -->
+                    <li class= "item"><button><a  href= "connectpage.html" target="_self">.connect</button></a></li>  
+                    <!-- <li><a href= "#"><span class= "bars"></span></a></li> -->
+                  </ul>
+                </div>
+    </nav>
+
+    <div class= "video_grid_container">
+        <div class="video_grid_inner">
+
+        <div class= "video_grid_item">
+            <a href="#" onclick="toggle1();">
+                <img src="img/21reel.png" alt="2021 demo reel">
+            </a>
+    
+        </div>
+
+        <div class= "video_grid_item">
+            <a href="#" onclick="toggle2();">
+                <img src="img/shed.png" alt="shed short film">
+            </a>
+
+        </div>
+
+        <div class= "video_grid_item">
+            <a href="#" onclick="toggle3();">
+                <img src="img/blackkow.png" alt="black kow commercial">
+            </a>
+
+        </div>
+
+        <div class= "video_grid_item">
+            <a href="#" onclick="toggle4();">
+                <img src="img/blackkow.png" alt="black kow commercial">
+            </a>
+
+        </div>
+
+        <div class= "video_grid_item">
+            <a href="#" onclick="toggle5();">
+                <img src="img/blackkow.png" alt="black kow commercial">
+            </a>
+
+        </div>
+
+        <div class= "video_grid_item">
+            <a href="#" onclick="toggle6();">
+                <img src="img/pbsc.png" alt="palm beach state college commercial">
+            </a>
+
+        </div>
+
+        <div class= "video_grid_item">
+            <a href="#" onclick="toggle7();">
+                <img src="img/armstrong.png" alt="armstrong lock and security commercial">
+            </a>
+
+        </div>
+
+        </div>
+        
+    </div>
+
+    <div class="video_player_container">
+        <div class="video_player_inner">
+
+            <div class="video_player_reel">
+                <iframe src="https://player.vimeo.com/video/663440775?h=90a688a9ee&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" 
+                frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen style="width:100%;height:100%;" title="2021 Cinematography Reel"></iframe>
+
+                <img src="img/close.png" class= "close" onclick="toggle1();" alt="">
+            </div>
+
+            <div class="video_player_shed">
+                <iframe src="https://player.vimeo.com/video/508161224?h=ee372646a2&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" 
+                frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen style="width:100%;height:100%;" title="SHED"></iframe>
+
+                <img src="img/close.png" class= "close" onclick="toggle2();" alt="">
+            </div>
+
+            <div class="video_player_bkka">
+                <iframe src="https://player.vimeo.com/video/509052864?h=995ab8af68&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" 
+                frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen style="width:100%;height:100%;" title="Black Kow | The Mature Manure A"></iframe>
+
+                <img src="img/close.png" class= "close" onclick="toggle3();" alt="">
+            </div>
+
+            <div class="video_player_bkkb">
+                <iframe src="https://player.vimeo.com/video/509052805?h=11e328d01d&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" 
+                frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen style="width:100%;height:100%;" title="Black Kow | The Mature Manure B"></iframe>
+
+                <img src="img/close.png" class= "close" onclick="toggle4();" alt="">
+            </div>
+
+            <div class="video_player_bkkc">
+                <iframe src="https://player.vimeo.com/video/509052751?h=e70125f22b&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" 
+                frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen style="width:100%;height:100%;" title="Black Kow | The Mature Manure C"></iframe>
+
+                <img src="img/close.png" class= "close" onclick="toggle5();" alt="">
+            </div>
+
+            <div class="video_player_pbsc">
+                <iframe src="https://player.vimeo.com/video/509079987?h=b3f5357379&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" 
+                frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen style="width:100%;height:100%;" title="Palm Beach State College"></iframe>
+
+                <img src="img/close.png" class= "close" onclick="toggle6();" alt="">
+            </div>
+
+            <div class="video_player_arm">
+                <iframe src="https://player.vimeo.com/video/509553058?h=0373e20062&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" 
+                frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen style="width:100%;height:100%;" title="Armstrong Lock &amp;amp; Security"></iframe>
+
+                <img src="img/close.png" class= "close" onclick="toggle7();" alt="">
+            </div>
+            
+            
+        </div> 
+    </div>
+    
+    <div class="footer_container">
+        <div class="footer_inner">
+
+            <div class= "footer_connect">
+            <h2>let's connect</h2>
+            <p>jordan.dotpetty@gmail.com</p>
+            </div>
+            <nav class= "footer_icons">
+                <a href= "" rel= "instagram icon">
+                    <img class= "insta_con" src= "img/instaicon.png" alt= "instagram icon">
+                </a>
+        
+                <a href= "" rel= "vimeo icon">
+                    <img class= "vimeo_con" src= "img/vimeoicon.png" alt= "vimeo icon">
+                </a>
+        
+                <a href= "" rel= "linkedin icon">
+                    <img class= "link_con" src= "img/linkedicon.png" alt= "linkedin icon">
+                </a>
+            </nav>
+
+        </div>
+
+        <div class= "footerNav" id= "footerNav" >
+                <ul class="footerNavItems">
+                    <li class= "item"><button><a  href= "connectpage.html" target="_self">.connect</button></a></li>  
+                  </ul>
+                </div>
+    </div>
+
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+    
+</body>
+</html>
