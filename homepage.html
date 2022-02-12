@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <title>DotPetty</title>
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css" integrity="sha512-yHknP1/AwR+yx26cB1y0cjvQUMvEa2PFzt1c9LlS4pRQ5NOTZFWbhBig+X9G9eYW/8m0/4OXNx8pxJ6z57x0dw==" 
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+   
+    <link href= "homestyles.css" rel="stylesheet">
+    <script src="homescript.js" defer></script>
+
+</head>
+
+<body>
+
+    <section class="menu">
+        <nav class= "navbar_links">
+            <div class= "logo">
+                <a href="homepage.html" target="_self">
+                    <img class= "top_logo" src= "img/logo.png" atl= "top logo">
+                </a>
+
+                <!-- <a href= "" class= "toggle_button">
+                    <span class= "bar"></span>
+                    <span class= "bar"></span>
+                    <span class= "bar"></span>
+                </a> -->
+                
+            </div>
+            <ul> 
+              <li class= "links"><a href= "workpage.html" target="_self">.work</a></li>  
+              <li class= "links"><a href= "connectpage.html" target="_self">.connect</a></li>  
+            </ul>
+        </nav>  
+
+        <nav class="container">
+            
+                <span class= "arrow prev">
+                    <img class= "left_arrow" src= "img/leftarrow.png" alt= "left arrow">
+                </span>
+                <span class= "arrow next">
+                    <img class= "right_arrow" src= "img/leftarrow.png" alt= "left arrow">
+                </span>
+
+                <div class= "slider_inner">
+                    
+                            <div class= "slider_content">
+                                <div>
+
+                                    <a href= "#">
+                                        <h2 class= "thumbnail_shed">.shed</h2>
+                                    </a>
+
+                                    <a href="#">
+                                        <img class= "thumbnail" src="img/shed.png" alt="shed short film">
+                                    </a>
+
+                                    <div>
+                                        <p class= "thumbnail_text_two">.film</p>
+                                    </div>
+
+                                </div>
+                                <div>
+
+                                    <a href= "">
+                                        <h2 class= "thumbnail_kow">.black kow</h2>
+                                    </a>
+
+                                    <a href="">
+                                        <img class= "thumbnail" src="img/blackkow.png" alt="black kow commercial">
+                                    </a>
+                                    
+                                    <div>
+                                        <p class= "thumbnail_text_two">.commercial</p>
+                                    </div>
+                                </div>
+                                <div>
+
+                                    <a href= "">
+                                        <h2 class= "thumbnail_text_pbsc">.palm beach state college</h2>
+                                    </a>
+
+                                    <a href="">
+                                        <img class= "thumbnail" src="img/pbsc.png" alt="palm beach state college commercial">
+                                    </a>
+                                    
+                                    <div>
+                                        <p class= "thumbnail_text_two">.commercial</p>
+                                    </div>
+                                </div>
+                                <div>
+
+                                    <a href= "">
+                                        <h2 class= "thumbnail_arm">.armstrong lock & security</h2>
+                                    </a>
+
+                                    <a href="">
+                                        <img class= "thumbnail" src="img/armstrong.png" alt="armstrong lock and security commercial">
+                                    </a>
+                                    
+                                    <div>
+                                        <p class= "thumbnail_text_two">.commercial</p>
+                                    </div>
+                                </div>
+                            </div>  
+                    
+              </div>
+          
+            
+        </nav>
+
+    </section>   
+    
+    <div class= "shed_popup_link">
+                                        
+        <iframe src="https://player.vimeo.com/video/508161224?h=ee372646a2&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" 
+        allowfullscreen  title="SHED"></iframe>
+
+    </div>
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" 
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js" integrity="sha512-XtmMtDEcNz2j7ekrtHvOVR4iwwaD6o/FUJe6+Zq+HgcCsk3kj4uSQQR8weQ2QVj1o0Pk6PwYLohm206ZzNfubg==" 
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        <script>
+            jQuery(document).ready(function() {
+                $('.slider_content').slick({
+                    infinity: true,
+                    slideToShow: 1,
+                    arrows: true,
+                    nextArrow: '.arrow.next',
+                    prevArrow: '.arrow.prev',
+                    fade: true,
+
+                    
+                });
+            })  
+        </script>  
+
+        <script>
+
+            const thumbnail = document.querySelector('thumbnail');
+            const shedVideoContainer = document.querySelector('shedvidcontainer');
+            const close = document.querySelector('close');
+
+            thumbnail.addEventListener('click', () => {
+                shedVideoContainer.classList.add('show');
+            })
+
+            close.addEventListener('click', () => {
+                shedVideoContainer.classList.remove('show');
+            })
+            
+        </script>
+
+      
+    
+    
+    <footer>
+
+        <h2 class= "footer_connect">let's connect</h2>
+        <p class= "footer_info">jordan.dotpetty@gmail.com <br> (678) 630 - 0843</p>
+
+        <a href= "" rel= "instagram icon">
+            <img class= "insta_con" src= "img/instaicon.png" alt= "instagram icon">
+        </a>
+
+        <a href= "" rel= "vimeo icon">
+            <img class= "vimeo_con" src= "img/vimeoicon.png" alt= "vimeo icon">
+        </a>
+
+        <a href= "" rel= "linkedin icon">
+            <img class= "link_con" src= "img/linkedicon.png" alt= "linkedin icon">
+        </a>
+    </footer>
+    
+</body>
+</html>
